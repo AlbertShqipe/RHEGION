@@ -8,9 +8,43 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+
   </head>
 
   <body>
-    <%= yield %>
+  <!-- Loading animation -->
+  <!--
+    <div id="loading-overlay">
+      <%= image_tag "LogoRhegion.png" %>
+      <div class="spinner">
+      </div>
+    </div>
+    -->
+
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div>
+      <%= yield %>
+    </div>
+
+
+    <%# <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Delay hiding loading overlay and showing content for 4 seconds
+        setTimeout(function() {
+          document.getElementById('loading-overlay').style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+        }, 2000); // Delay for 4 seconds (4000 milliseconds)
+      });
+    </script> %>
   </body>
 </html>

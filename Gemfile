@@ -3,6 +3,9 @@ source "https://rubygems.org"
 ruby "3.1.2"
 
 
+# Gemfile
+gem "dotenv-rails"
+
 # sassc-rails is a Sass/SCSS adapter for the Rails asset pipeline
 gem "sassc-rails"
 
