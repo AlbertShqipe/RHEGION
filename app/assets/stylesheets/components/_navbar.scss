@@ -1,14 +1,16 @@
 /* Navbar styles */
 .navbar {
-  background-color: transparent; /* Transparent background */
-  height: 80px; /* Adjust height as needed */
+  background-color: rgba(0, 0, 0, 1); /* Transparent background */
+  height: 105px; /* Adjust height as needed */
+  width: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  vertical-align: middle;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; /* Ensure navbar appears above other content */
+  border-bottom: 2px solid rgb(246, 202, 46);
 }
 
 .container {
@@ -17,26 +19,11 @@
   padding: 0 20px;
 }
 
-.navbar-links {
-  list-style: none;
-  margin: auto;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  font-weight: 100;
+.navbar-item {
+  flex: 1;
+  text-align: center;
+}
 
-  li {
-    margin: 0 30px; /* Adjust spacing between links */
-    display: inline-block;
-
-    a {
-      color: #2c0000; /* Link color */
-      text-decoration: none;
-      transition: color 0.3s;
-
-      &:hover {
-        color: rgba(44, 0, 0, 0.6); /* Link color on hover */
-      }
-    }
-  }
+.navbar-item-centered {
+  flex: 0 0 auto;
 }

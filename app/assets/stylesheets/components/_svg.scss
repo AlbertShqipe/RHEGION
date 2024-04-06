@@ -1,0 +1,22 @@
+#b032a4a6-eb1b-4c0e-b99c-d687dcadd10e {
+box-sizing: border-box;
+color: rgb(246, 202, 46);
+cursor: pointer;
+display: block;
+fill: rgb(246, 202, 46);
+font-family: Sarabun, sans-serif;
+font-size: 50px;
+font-weight: 400;
+height: 50px;
+line-height: 50px;
+overflow-x: hidden;
+overflow-y: hidden;
+position: relative;
+text-align: center;
+width: 50px;
+-webkit-font-smoothing: antialiased;
+  &:hover {
+    color: rgb(92, 92, 92);
+    fill:  rgb(92, 92, 92);
+  }
+}

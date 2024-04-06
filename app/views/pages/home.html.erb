@@ -1,6 +1,32 @@
-<div>
-  <%= image_tag ("https://lh3.googleusercontent.com/p/AF1QipP7me8FMkFexsoUFw-Fs_hJSSjZJx9jHD9QdXko=s1360-w1360-h1020"), class:"img" %>
-</div>
-<div id="map">
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"> <%= image_tag "bottles.jpeg" %></div>
+    <div class="swiper-slide"> <%= image_tag "capuccino.jpeg" %></div>
+    <div class="swiper-slide"><%= image_tag "cocktails.jpeg" %></div>
+    <div class="swiper-slide"><%= image_tag "cornetti.jpeg" %></div>
+  </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

@@ -19,11 +19,12 @@ body  {
   flex-direction: column;
   line-height: 1;
   vertical-align: baseline;
-  background: rgba(239, 239, 239, 0.5);
-  color: #585858;
+  background: #000;
+  color:  rgb(246, 202, 46);
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 16pt;
   font-weight: 100;
+  position: relative;
 
   .content {
     position: relative;

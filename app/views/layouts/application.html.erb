@@ -9,35 +9,56 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
-
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      html{
+      position: relative;
+      height: 100%;
+    }
+    </style>
   </head>
 
   <body>
   <!-- Loading animation -->
   <!--
     <div id="loading-overlay">
-      <%= image_tag "LogoRhegion.png" %>
+      <%= image_tag "Rhegion.png" %>
       <div class="spinner">
       </div>
     </div>
-    -->
+  -->
 
     <nav class="navbar">
       <div class="container">
-        <ul class="navbar-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
+        <div class="navbar-item">
+          <p>Tutti i giorni dalle<br> 06:00 - 02:00</p>
+        </div>
+        <%= image_tag "Rhegion.png", width:"170", class:"navbar-item-centered" %>
+        <div id="main" class="navbar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" id="b032a4a6-eb1b-4c0e-b99c-d687dcadd10e" data-name="Layer 1" width="41.3999" height="23.6001" viewBox="0 0 41.3999 23.6001" onclick="openNav()" >
+            <rect width="41.3999" height="2"></rect><rect x="21.6001" y="10.8003" width="19.7998" height="2"></rect>
+            <rect x="32.3999" y="21.6001" width="9" height="2"></rect>
+          </svg>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <header>Benvenuti</header>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/about">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="contact">Contact</a>
+        </div>
+
       </div>
     </nav>
-
-    <div>
-      <%= yield %>
+      <div>
+        <%= yield %>
+      </div>
     </div>
 
 
-    <%# <script>
+    <script>
       document.addEventListener('DOMContentLoaded', function() {
         // Delay hiding loading overlay and showing content for 4 seconds
         setTimeout(function() {
@@ -45,6 +66,17 @@
           document.getElementById('content').style.display = 'block';
         }, 2000); // Delay for 4 seconds (4000 milliseconds)
       });
-    </script> %>
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "550px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
   </body>
 </html>
