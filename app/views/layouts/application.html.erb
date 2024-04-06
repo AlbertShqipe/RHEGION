@@ -9,14 +9,39 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
+
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
       html{
-      position: relative;
-      height: 100%;
-    }
+        position: relative;
+        height: 100%;
+      }
+
+      /* Set the size of the div element that contains the map */
+      #map {
+          height: 400px; /* The height is 400 pixels */
+          width: 100%; /* The width is the width of the web page */
+          margin-top: 150px;
+      }
+
     </style>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvHb9G0A9MOGWlj6vjUBji4DADWFybLRo&callback=initMap" ></script>
+    <script>
+      function initMap() {
+        let rhegion = {lat: 41.86386715336272, lng: 12.46471425396899};
+        let map = new google.maps.Map(
+          document.getElementById('map'), {
+          zoom: 18,
+          center: rhegion
+        });
+        let marker = new google.maps.Marker({
+          position: rhegion,
+          map: map
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -44,7 +69,7 @@
         <div id="mySidenav" class="sidenav">
           <header>Benvenuti</header>
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="home">Home</a>
+          <a href="/">Home</a>
           <a href="about">Chi siamo</a>
           <a href="contact">Contatti</a>
         </div>
