@@ -5,12 +5,12 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
-  vertical-align: middle;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; /* Ensure navbar appears above other content */
   border-bottom: 2px solid rgb(246, 202, 46);
+  position: relative;
 }
 
 .container {
@@ -26,4 +26,10 @@
 
 .navbar-item-centered {
   flex: 0 0 auto;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
