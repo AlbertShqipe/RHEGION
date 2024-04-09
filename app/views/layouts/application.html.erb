@@ -19,13 +19,6 @@
         height: 100%;
       }
 
-      /* Set the size of the div element that contains the map */
-      #map {
-          height: 400px; /* The height is 400 pixels */
-          width: 100%; /* The width is the width of the web page */
-          margin-top: 150px;
-      }
-
     </style>
     <script>
       function initMap() {
@@ -68,9 +61,9 @@
         <div id="mySidenav" class="sidenav">
           <header>Benvenuti</header>
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="/">Home</a>
-          <a href="about">Chi siamo</a>
-          <a href="contact">Contatti</a>
+          <a href="/" id="home">Home</a>
+          <a href="about" id="about">Chi siamo</a>
+          <a href="contacts" id="contacts">Contatti</a>
         </div>
 
       </div>
@@ -105,6 +98,22 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
+
+    <script>
+      if (window.location.pathname == "/") {
+        let home = document.getElementById("home");
+        home.style["border-bottom"] = "1.5px solid rgb(246, 202, 46)";
+        home.style["color"] = "white";
+      } else if (window.location.pathname == "/contacts") {
+        let contacts = document.getElementById("contacts");
+            contacts.style["border-bottom"] = "1.5px solid rgb(246, 202, 46)";
+            contacts.style["color"] = "white";
+      } else {
+        let about = document.getElementById("about");
+        about.style["border-bottom"] = "1.5px solid rgb(246, 202, 46)";
+        about.style["color"] = "white";
       }
     </script>
 
