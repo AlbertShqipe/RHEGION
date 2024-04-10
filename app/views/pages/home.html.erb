@@ -1,17 +1,66 @@
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"> <%= image_tag "bottles.jpeg" %></div>
-    <div class="swiper-slide"> <%= image_tag "capuccino.jpeg" %></div>
-    <div class="swiper-slide"><%= image_tag "cocktails.jpeg" %></div>
-    <div class="swiper-slide"><%= image_tag "cornetti.jpeg" %></div>
+<div style="position:relative;">
+  <div style="width:80%; margin:auto;">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <%= image_tag "bottles.jpeg" %></div>
+        <div class="swiper-slide"> <%= image_tag "capuccino.jpeg" %></div>
+        <div class="swiper-slide"><%= image_tag "cocktails.jpeg" %></div>
+        <div class="swiper-slide"><%= image_tag "cornetti.jpeg" %></div>
+      <%# </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div> %>
+    </div>
+  <div style="background-image:src('Rhegion.png')">
+    <h1 style="font-size:180px;font-family:copperplate gothic 29, sans-serif;font-weight:100">RHEGION</h1>
   </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
   </div>
+  <div style="text-align:center;">
+    <p style="font-size:16px;margin-bottom:0;padding-bootom:0;font-weight:100"><i>BAR, CAFFE, PASTICCERIA, GELATERIA</i></p>
+  </div>
+</div>
+<div style="text-align:center; border-bottom:1.5px solid rgb(246, 202, 46);padding-top:20px;margin:auto; width:80%;">
+  <h1>BAR, CAFFE, PASTICCERIA, GELATERIA 7/7 ROMA</h1>
+</div>
+<div style="text-align:center; border-bottom:1.5px solid rgb(246, 202, 46);padding-top:20px;margin:auto; width:80%;color:white;font-size:16px !important;">
+  <p style="font-size:16px !important;">Aperto dal 1500BC, il RHEGION offre il miglior servizio ai romani e a tutti i visitori di terre lontane!</p>
+  <p style="font-size:16px !important;">In una delle strade più popolate di Roma, il Rhegion garantisce dei pasticcini, torte, caffè e bevande che garantiscono la tradizione italiana, ma allo stesso tempo tenendosi all'avanguardia per tutte le proposizioni contemporanea.  </p>
+</div>
+<div style="width:80%; margin:auto">
+  <div style="display:flex;">
+    <div style="width:30%; margin:auto; text-align:center; margin-top: 50px;">
+      <div style="display:flex; border-bottom:1.5px solid rgb(246, 202, 46);padding-bottom:20px">
+        <p style="width:50%; margin:auto;">Pasticcini</p>
+        <a href="/sweets" style="width:50%; margin:auto;">Vedi</a>
+      </div>
+      <div style="width:300px; height:300px;">
+        <a href="/sweets"><%= image_tag "pasticcini.jpeg", class:"home-img" %></a>
+      </div>
+    </div>
+    <div style="width:30%; margin:auto; text-align:center; margin-top: 100px;">
+      <div style="display:flex; border-bottom:1.5px solid rgb(246, 202, 46);padding-bottom:20px">
+        <p style="width:50%; margin:auto;">Bevande</p>
+        <a href="/drinks" style="width:50%; margin:auto;">Vedi</a>
+      </div>
+      <div style="width:300px; height:300px;">
+        <a href="/drinks"><%= image_tag "drinks.jpeg", class:"home-img" %></a>
+      </div>
+    </div>
+    <div style="width:30%; margin:auto; text-align:center; margin-top: 150px;">
+      <div style="display:flex; border-bottom:1.5px solid rgb(246, 202, 46);padding-bottom:20px">
+        <p style="width:50%; margin:auto;">Eventi</p>
+        <a href="/events" style="width:50%; margin:auto;">Vedi</a>
+      </div>
+      <div style="width:300px; height:300px;">
+        <a href="/events"><%= image_tag "pandoro.jpeg", class:"home-img" %></a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 <script>
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
