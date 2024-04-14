@@ -9,12 +9,10 @@
 
 .home-img {
   width: 353px;
-  height: 300px;
+  height: 253px;
   filter: grayscale(100%);
+  transition: filter 0.5s ease;
   &:hover {
-    transform: scale(1.01);
-    transition: transform 0.3s;
     filter: grayscale(0%);
-
   }
 }

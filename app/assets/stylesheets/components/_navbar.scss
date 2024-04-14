@@ -2,7 +2,6 @@
 .navbar {
   background-color: rgba(0, 0, 0, 1); /* Transparent background */
   height: 105px; /* Adjust height as needed */
-  width: 80%;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -16,6 +15,10 @@
   max-width: 1200px; /* Adjust container width as needed */
   width: 100%;
   padding: 0 20px;
+}
+
+.orario p{
+  font-size: medium;
 }
 
 .navbar-item {

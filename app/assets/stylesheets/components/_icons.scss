@@ -1,0 +1,31 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+.white {
+  color: rgb(246, 202, 46);
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 8px;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.icons-contact {
+  i {
+    font-size: 40px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}

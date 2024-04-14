@@ -1,0 +1,72 @@
+.relative {
+  position: relative;
+}
+.rhegion-background {
+  background-image:src('Rhegion.png');
+
+  h1 {
+    font-size:180px;
+    font-family:copperplate gothic 29, sans-serif;
+    font-weight:100;
+  }
+}
+.cont {
+  width: 80%;
+}
+
+.heading {
+  text-align: center;
+  border-bottom: 1.5px solid rgb(246, 202, 46);
+  padding-top: 20px;margin:auto;
+}
+
+.desc {
+  text-align: center;
+  border-bottom: 1.5px solid rgb(246, 202, 46);
+  padding-top: 20px;
+  margin: auto;
+  color: white;
+  font-size:16px !important;
+}
+
+.social-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  border-bottom: 1.5px solid rgb(246, 202, 46);
+
+  .icon-cont a{
+    text-decoration: none;
+    color: rgb(246, 202, 46);
+  }
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.m-t-45{
+  margin-top: 45px;
+  p {
+    font-size: 16px;
+    color: white;
+
+  }
+}
+
+.contact {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  .item:first-child {
+    margin-left: 20px;
+  }
+  .item:last-child {
+    margin-right: 100px;
+  }
+}

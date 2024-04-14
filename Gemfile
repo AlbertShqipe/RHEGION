@@ -4,6 +4,14 @@ ruby "3.1.2"
 
 
 # Gemfile
+
+# ngrok exposes local servers behind NATs and firewalls to the public internet over secure tunnels [https://ngrok.com]
+group :development do
+  gem 'ngrok-tunnel'
+  gem 'tty-box'
+end
+
+# .env files are used to configure your application's environment variables
 gem "dotenv-rails"
 
 # sassc-rails is a Sass/SCSS adapter for the Rails asset pipeline
