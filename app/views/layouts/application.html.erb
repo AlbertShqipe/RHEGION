@@ -81,9 +81,16 @@
     <script>
       function openNav() {
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-        document.getElementById("mySidenav").style.width = "80%";
+        if (screenWidth < 768) {
+          document.getElementById("mySidenav").style.width = "80%";
+          document.getElementById("main").style.marginLeft = "80%";
+        } else if (screenWidth < 576){
+          document.getElementById("mySidenav").style.width = "80%";
+          document.getElementById("main").style.marginLeft = "80%";
+        } else {
+        document.getElementById("mySidenav").style.width = "40%";
         document.getElementById("main").style.marginLeft = "40%";
+        }
       }
 
       function closeNav() {

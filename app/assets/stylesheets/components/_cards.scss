@@ -3,13 +3,51 @@
   border-bottom: 1.5px solid rgb(246, 202, 46);
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    border-bottom: 1.5px solid rgb(246, 202, 46);
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    margin: auto;
+    width: 80%;
+    padding: 0;
+  }
+
+  @media (max-width: 576px) {
+    border-bottom: 1.5px solid rgb(246, 202, 46);
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    margin: auto;
+    padding: 0;
+    width: 80%;
+  }
 }
 
+.card-cont a i {
+
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
 .card1 {
   width: 30%;
   margin: auto;
   text-align: center;
   margin-top: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    margin: auto;
+    width: 80%;
+  }
+  @media (max-width: 576px) {
+    font-size: 9px;
+    letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 .card2 {
@@ -17,6 +55,19 @@
   margin: auto;
   text-align: center;
   margin-top: 100px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    margin: auto;
+    width: 80%;
+  }
+  @media (max-width: 576px) {
+    font-size: 9px;
+    letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 .card3 {
@@ -24,6 +75,19 @@
   margin: auto;
   text-align: center;
   margin-top: 150px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    margin: auto;
+    width: 80%;
+  }
+  @media (max-width: 576px) {
+    font-size: 9px;
+    letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 .card-cont {
@@ -38,7 +102,18 @@
   }
 }
 
-.card-image-cont {
-  width:300px;
-  height:300px;
+.card-image-cont img{
+  width: 300px;
+  height: 250px;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+
+  }
+  @media (max-width: 576px) {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }

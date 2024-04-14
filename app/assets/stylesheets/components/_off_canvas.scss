@@ -9,6 +9,20 @@
   overflow-x: hidden;
   transition: 0.5s  ease-in-out;
   padding-top: 60px;
+
+  @media (max-width: 450px) {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s  ease-in-out;
+    padding-top: 45px;
+
+  }
 }
 
 .sidenav a {
@@ -20,6 +34,17 @@
   line-height: 1;
   transition: 0.3s;
   white-space: nowrap;
+
+  @media (max-width: 450px) {
+    padding: 12px 10px 10px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(246, 202, 46);
+    display: block;
+    line-height: 1;
+    transition: 0.3s;
+    white-space: nowrap;
+  }
 
   &:hover {
   color: #f1f1f1;
@@ -35,42 +60,16 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+
+  @media (max-width: 450px) {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+  }
 }
 
 #main {
   transition: margin-right .5s;
   padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1100;
-    top: 0;
-    right: 0;
-    background-color: #000;
-    overflow-x: hidden;
-    transition: 0.5s  ease-in-out;
-  }
-  .sidenav a {
-    font-size: 9px;
-    letter-spacing: 4px;
-    padding: 10px 4px 4px 16px;
-    text-decoration: none;
-    color: rgb(246, 202, 46);
-    display: block;
-    line-height: 1;
-    transition: 0.3s;
-    white-space: nowrap;
-
-    &:hover {
-    color: #f1f1f1;
-    border-bottom: 1.5px solid rgb(246, 202, 46);
-
-    }
-  }
-
 }

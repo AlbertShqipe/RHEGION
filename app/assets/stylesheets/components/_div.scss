@@ -12,6 +12,7 @@
 }
 .cont {
   width: 80%;
+  margin: auto;
 }
 
 .heading {
@@ -28,6 +29,25 @@
   margin: auto;
   color: white;
   font-size:16px !important;
+  @media (max-width: 768px) {
+    text-align: center;
+    border-bottom: 1.5px solid rgb(246, 202, 46);
+    padding-top: 20px;
+    margin: auto;
+    color: white;
+    font-size: 9px !important;
+  }
+
+  // Media query for smartphones (576px)
+  @media (max-width: 576px) {
+    text-align: center;
+    border-bottom: 1.5px solid rgb(246, 202, 46);
+    padding-top: 20px;
+    margin: auto;
+    color: white;
+    font-size: 9px !important;
+  }
+
 }
 
 .social-cont {
@@ -39,10 +59,11 @@
   margin-top: 40px;
   border-bottom: 1.5px solid rgb(246, 202, 46);
 
-  .icon-cont a{
+  .icon-cont a {
     text-decoration: none;
     color: rgb(246, 202, 46);
   }
+
 }
 
 .m-r-20 {
@@ -51,6 +72,17 @@
 
 .m-t-45{
   margin-top: 45px;
+
+  @media (max-width: 768px) {
+    margin-top: 45px;
+
+  }
+  @media (max-width: 576px) {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
   p {
     font-size: 16px;
     color: white;
@@ -74,10 +106,42 @@
   display: flex;
   justify-content: space-between;
 
-  .item:first-child {
-    margin-left: 20px;
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+  }
+  @media (max-width: 576px) {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    margin-top: 10px;
+  }
+}
+
+.item:first-child {
+  margin-left: 20px;
+
+  @media (max-width: 768px) {
+    margin: auto;
+  }
+  @media (max-width: 576px) {
+    margin: auto;
   }
   .item:last-child {
     margin-right: 100px;
   }
+}
+
+.contact-page {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px
 }
