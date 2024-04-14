@@ -54,7 +54,12 @@
       <div>
         <%= yield %>
       </div>
-      <%= render partial: 'pages/shared/footer' %>
+      <% if controller_name == 'pages' && action_name == 'home' %>
+        <!-- Code specific to the home page -->
+        <%! render partial: 'pages/shared/footer' %>
+      <% else %>
+        <%= render partial: 'pages/shared/footer'  %>
+      <% end %>
     </div>
 
 
