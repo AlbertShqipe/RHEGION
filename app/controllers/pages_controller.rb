@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def contacts
   end
+
+  def  menu
+  end
 end
