@@ -23,6 +23,13 @@
   img {
     width: 350px;
     margin: auto;
+
+    @media (max-width: 768px) {
+      width: 150px;
+    }
+    @media (max-width: 576px) {
+      width: 100px;
+    }
   }
 
 
