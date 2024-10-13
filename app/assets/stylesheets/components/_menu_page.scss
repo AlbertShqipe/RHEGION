@@ -120,3 +120,34 @@
     }
   }
 }
+
+#gelato {
+  .body {
+    width: 29%;
+
+    h3 {
+      margin-top: 15px;
+    }
+
+    .tile-container {
+      margin-top: 0px;
+
+      .tile-content {
+        margin-top: 0px;
+
+        h3 {
+          margin-top: 0px;
+        }
+      }
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    margin: auto;
+  }
+}
