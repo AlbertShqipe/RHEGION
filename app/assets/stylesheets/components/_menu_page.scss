@@ -3,6 +3,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
 
 }
 
@@ -17,7 +18,17 @@
   padding-bottom: 16px;
 
   h1 {
+    font-size: 50px;
+    padding-top: 80px;
 
+    @media (max-width: 768px) {
+      font-size: 30px;
+      padding-top: 30px;;
+    }
+    @media (max-width: 576px) {
+      font-size: 25px;
+      padding-top: 20px;
+    }
   }
 
   img {
@@ -38,21 +49,46 @@
 .tile-title {
   width: 80%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
+  padding-top: 40px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  @media (max-width: 576px) {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
 
   h1 {
     border-bottom: 1.5px solid rgb(246, 202, 46);
     display: inline;
-    font-size: 40px
+    font-size: 30px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;;
+    }
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
   }
 }
+
 .tile-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   border-bottom: 1.5px solid rgb(246, 202, 46);
   margin-top: 15px;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+  @media (max-width: 576px) {
+    margin-top: 10px;
+  }
 }
 
 .tile-content {
@@ -60,6 +96,13 @@
   h3 {
     font-size: 18px;
     margin-bottom: 5px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
   }
 
   p {
@@ -68,5 +111,12 @@
     font-family: 'Prompt', sans-serif;
     color: white;
     font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
   }
 }
